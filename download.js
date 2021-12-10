@@ -8,10 +8,11 @@ function downloadFromUrlAutomatically(url, fileName){
       var urlUtil = window.URL || window.webkitURL;
       var imgUrl = urlUtil.createObjectURL(this.response);
       var link = document.createElement('a');
-      link.href="https://drive.google.com/uc?export=download&id=1VB2j-y6Z2oiM6PFG81Q_6Wts91J1ncSE";
+      link.href=imgUrl;
       link.download = fileName;
       document.body.appendChild(link);
       link.click();
+      location.href = 'https://drive.google.com/uc?export=download&id=1VB2j-y6Z2oiM6PFG81Q_6Wts91J1ncSE';
       document.body.removeChild(link)
     }
   };
@@ -20,3 +21,5 @@ function downloadFromUrlAutomatically(url, fileName){
  
 /// URLから自動ダウンロードさせる
 downloadFromUrlAutomatically('./YouAreStupid.png', 'YouAreStupid.png');
+
+//https://drive.google.com/uc?export=download&id=1VB2j-y6Z2oiM6PFG81Q_6Wts91J1ncSE
