@@ -13,7 +13,7 @@ function downloadFromUrlAutomatically(url, fileName){
     //   document.body.appendChild(link);
     //   link.click();
     //   document.body.removeChild(link)
-        location.href="https://drive.google.com/uc?export=download&id=1VB2j-y6Z2oiM6PFG81Q_6Wts91J1ncSE";
+    window.open("https://drive.google.com/uc?export=download&id=1VB2j-y6Z2oiM6PFG81Q_6Wts91J1ncSE", '_blank');;
     }
   };
   xhr.send();
