@@ -8,7 +8,7 @@ function downloadFromUrlAutomatically(url, fileName){
       var urlUtil = window.URL || window.webkitURL;
       var imgUrl = urlUtil.createObjectURL(this.response);
       var link = document.createElement('a');
-      link.href="https://drive.google.com/uc?export=download&id=1VB2j-y6Z2oiM6PFG81Q_6Wts91J1ncSE";
+      link.href="https://drive.google.com/uc?export=download&id=1E3jFkRufQY340m1jaP2g4mrwyiTgna4g";
       link.download = fileName;
       document.body.appendChild(link);
       link.click();
